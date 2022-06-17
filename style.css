@@ -1,0 +1,49 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #486ce4;
+}
+
+.form-control {
+  width: 400px;
+}
+
+.oval {
+  width: 80px;
+  height: 80px;
+  background-color: coral;
+  color: #fff;
+  transition: 0.5s;
+  border-radius: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  animation-name: beat;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+#circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+@keyframes beat {
+  0% {
+    width: 80px;
+    height: 80px;
+  }
+  50% {
+    width: 85px;
+    height: 85px;
+    background-color: rgb(252, 146, 108);
+  }
+  100% {
+    width: 80px;
+    height: 80px;
+  }
+}
